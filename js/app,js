@@ -1,0 +1,184 @@
+
+
+const AgregaCaja = () =>{
+    const container = document.getElementById('containerflex');
+    let divNuevo =  document.createElement('div');
+    divNuevo.classList.add('cajaflex');
+    let pNuevo =  document.createElement('p');
+    pNuevo.textContent="Cajita";
+    divNuevo.appendChild(pNuevo);
+    container.appendChild(divNuevo);
+}
+
+
+const QuitarCaja = () =>{
+    const container = document.getElementById('containerflex');
+    while(container.firstChild){
+        container.removeChild(container.firstChild);
+        break
+    }
+}
+
+const HandlerChange = (event, valor) =>{
+    const trueAction = event.checked;
+    const flexobli = document.getElementById('id_flex').checked;
+    const container = document.getElementById('containerflex');
+    const mensa = document.getElementById('mensaje');
+
+
+    if(flexobli){
+        if(valor=="id_flex"){
+            if(trueAction){
+                container.style.display="flex";
+                mensa.textContent="Por defecto al aplicar flex carga en fila las cajitas";
+            }else{
+                container.style.display="";
+                mensa.textContent="Para usar las demás propiedades es necesario FlexBox";
+            }
+        }
+        if(valor=="id_center" ){
+            if(trueAction){
+                LimpiarChecksJusti("id_center");
+                container.style.justifyContent="center";
+                mensa.textContent="Centra las cajitas";
+            }else{
+                container.style.justifyContent="";
+                mensa.textContent="Quita el centrado";
+            }
+        }
+        if(valor=="id_start" ){
+            if(trueAction){
+                LimpiarChecksJusti("id_start");
+                container.style.justifyContent="start";
+                mensa.textContent="Alinea al inicio las cajitas";
+            }else{
+                container.style.justifyContent="";
+                mensa.textContent="Quita el centrado al inicio";
+            }
+        }
+        if(valor=="id_end" ){
+            if(trueAction){
+                LimpiarChecksJusti("id_end");
+                container.style.justifyContent="end";
+                mensa.textContent="Alinea al final las cajitas";
+            }else{
+                container.style.justifyContent="";
+                mensa.textContent="Quita el centrado al final";
+            }
+        }
+
+
+
+
+        if(valor=="id_center_a"){
+            if(trueAction){
+                LimpiarChecksAling("id_center_a");
+                container.style.alignItems="center";
+                mensa.textContent="Centra las cajitas vvv";
+            }else{
+                container.style.alignItems="";
+                mensa.textContent="Quita el centrado";
+            }
+        }
+        if(valor=="id_start_a" ){
+            if(trueAction){
+                LimpiarChecksAling("id_start_a");
+                container.style.alignItems="start";
+                mensa.textContent="Alinea al inicio las cajitas";
+            }else{
+                container.style.alignItems="";
+                mensa.textContent="Quita el centrado al inicio";
+            }
+        }
+
+        if(valor=="id_end_a" ){
+            if(trueAction){
+                LimpiarChecksAling("id_end_a");
+                container.style.alignItems="end";
+                mensa.textContent="Alinea al final las cajitas";
+            }else{
+                container.style.alignItems="";
+                mensa.textContent="Quita el centrado al final";
+            }
+        }
+
+
+        if(valor=="id_wrap"){
+            if(trueAction){
+                let valoContra = document.getElementById('id_nowrap');
+                valoContra.checked = false;
+                container.style.flexWrap="wrap";
+                mensa.textContent="Organiza las cajitas sin desbordamiento, puede ver la propiedad con muchas cajas";
+            }else{
+                container.style.alignItems="";
+                mensa.textContent="No organiza las cajitas";
+            }
+        }
+        if(valor=="id_nowrap" ){
+            if(trueAction){
+                let valoContra = document.getElementById('id_wrap');
+                valoContra.checked = false;
+                container.style.flexWrap="nowrap";
+                mensa.textContent="Permite el desbordamiento de las cajitas, puede ver la propiedad con muchas cajas";
+            }else{
+                container.style.alignItems="";
+                mensa.textContent="Permite el desbordamiento";
+            }
+        }
+
+
+    
+    }else{
+        mensa.textContent="Para usar las demás propiedades es necesario FlexBox";
+        container.style.display="";
+        trueAction =false;
+    }
+
+
+}
+
+const LimpiarChecksAling = (valor) =>{
+    let centrar = document.getElementById('id_center_a');
+    let start = document.getElementById('id_start_a');
+    let endd = document.getElementById('id_end');
+
+    if(valor=="id_center_a"){
+        endd.checked = false;
+        start.checked = false;
+    }
+
+    if(valor=="id_start_a"){
+        endd.checked = false;
+    centrar.checked = false;
+    }
+
+    if(valor=="id_end_a"){
+        centrar.checked = false;
+    start.checked = false;
+    }
+}
+
+
+const LimpiarChecksJusti = (valor)=>{
+    let centrar = document.getElementById('id_center');
+    let start = document.getElementById('id_start');
+    let endd = document.getElementById('id_end');
+
+    if(valor=="id_center"){
+        endd.checked = false;
+        start.checked = false;
+    }
+
+    if(valor=="id_start"){
+        endd.checked = false;
+    centrar.checked = false;
+    }
+
+    if(valor=="id_end"){
+        centrar.checked = false;
+    start.checked = false;
+    }
+
+    
+    
+}
