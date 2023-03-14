@@ -182,3 +182,57 @@ const LimpiarChecksJusti = (valor)=>{
     
     
 }
+
+const ChangeSection = (event, valor) =>{
+
+    const inicioContainer = document.getElementById('inicio');
+    inicioContainer.classList.remove('container');
+    inicioContainer.classList.remove('noShow');
+        const temaContainer = document.getElementById('tema');
+        temaContainer.classList.remove('container');
+        temaContainer.classList.remove('noShow');
+            const mockuoContainer = document.getElementById('mockup');
+            mockuoContainer.classList.remove('container');
+            mockuoContainer.classList.remove('noShow');
+                const acercaContainer = document.getElementById('about');
+                acercaContainer.classList.remove('container');
+                acercaContainer.classList.remove('noShow');
+if(valor=="inicio"){
+    if(inicioContainer.classList!="container"){
+        inicioContainer.classList.add('container');
+        temaContainer.classList.add('noShow');
+        mockuoContainer.classList.add('noShow');
+        acercaContainer.classList.add('noShow');
+    }
+}
+
+if(valor=="tema"){
+    if(temaContainer.classList!="container"){
+    temaContainer.classList.add('container');
+    inicioContainer.classList.add('noShow');
+        mockuoContainer.classList.add('noShow');
+        acercaContainer.classList.add('noShow');
+    }
+}
+
+if(valor=="mockup"){
+    if(mockuoContainer.classList!="container"){
+    mockuoContainer.classList.add('container');
+    inicioContainer.classList.add('noShow');
+    temaContainer.classList.add('noShow');
+    acercaContainer.classList.add('noShow');
+    }
+}
+
+if(valor=="about"){
+    if(acercaContainer.classList!="container"){
+    acercaContainer.classList.add('container');
+    inicioContainer.classList.add('noShow');
+    temaContainer.classList.add('noShow');
+    mockuoContainer.classList.add('noShow');
+    }
+}
+
+
+}
+

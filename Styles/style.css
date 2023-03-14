@@ -35,7 +35,7 @@ padding: 0;
 }
 .containerflex{
     width: 100%;
-    height: 15rem;
+    height: 10rem;
     overflow: auto;
     background-color: rgb(237, 241, 214);
 }
@@ -44,7 +44,7 @@ padding: 0;
     justify-content: center;
     align-items: center;
     width: 100px;
-    height: 50px;
+    height: 40px;
     margin: 0.5rem;
     background-color:rgb(255, 237, 0) ;
 }
