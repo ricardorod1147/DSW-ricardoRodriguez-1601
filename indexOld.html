@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño web</title>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="js/app,js"></script>
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; justify-content: center; width: 50%;">
+            <h1>Bienvenido a mi sitio web</h1>
+        </div>
+        <div style="display: flex; justify-content:center; width: 50%;">
+            <button type="button" style="margin-right: 0.5rem;" class="btn btn-light" onclick="ChangeSection(this, 'inicio')">Inicio</button>
+            <button type="button" style="margin-right: 0.5rem;" class="btn btn-light" onclick="ChangeSection(this, 'tema')">Tema</button>
+            <button type="button" style="margin-right: 0.5rem;" class="btn btn-light"onclick="ChangeSection(this, 'mockup')">Mockup</button>
+            <button type="button" style="margin-right: 0.5rem;" class="btn btn-light" onclick="ChangeSection(this, 'about')">Acerca de</button>
+        </div>
+    </div>
+
+    <h6 style="margin-top: 0.5rem;">Proyecto de sitio web 2023 - 1601</h6>
+    <hr>
+    <section id="inicio" class="container">
+        <div>
+            <h1>Inicio</h1>
+            <hr>
+            <h4>Esta página corresponde expone el tema del funcionamiento de Flexbox</h4>
+            <p>Use los botones para navegar en el sitio web</p>
+        </div>
+        
+        </section>
+
+
+
+<section id="tema" class="noShow">
+<div>
+    <h1>Flexbox</h1>
+    <hr>
+    <p>
+        Cuando aplicamos esta propiedad en el diseño web, convertimos los controles o tags que están dentro del div que posee la propiedad FlexBox aplicada como display: flex, en cajitas flexibles literalmente, ya que se puede determinar cómo manipularlas y organizarlas en forma unidimensional de layout, accediendo de esta manera a varias propidades usadas por flexbox para nuestras interfaces, aquí explicaremos algunas de ellas por medio de una aplicación. Clic en Agregar Cajita.
+    </p>
+    <div id="containerflex" class="containerflex">
+        <!-- <div class="cajaflex">
+            <p>Cajita uno</p>
+        </div> -->
+
+
+    </div>
+
+<div style="height: 2rem; width: 100%;">
+<p id="mensaje"></p>
+</div>
+    <div style="font-size: 0.8rem;; display: flex; flex-wrap: wrap;"> 
+        <div class="leyenda">
+            <label for="id_flex">FlexBox</label>
+            <input type="checkbox" name="id_flex" id="id_flex" onchange="HandlerChange(this,'id_flex');">
+        </div>
+        <div  class="leyenda">
+            <label for="">justify-content:</label>
+            <label for="id_center">center:</label>
+            <input type="checkbox" name="id_center" id="id_center" onchange="HandlerChange(this,'id_center');">
+            <label for="id_start">start:</label>
+            <input type="checkbox" name="id_start" id="id_start" onchange="HandlerChange(this,'id_start');" >
+            <label for="id_end">end:</label>
+            <input type="checkbox" name="id_end" id="id_end" onchange="HandlerChange(this,'id_end');" >
+        </div>
+        <div class="leyenda">
+            <label for="">aling-item:</label>
+            <label for="id_center_a">center:</label>
+            <input type="checkbox" name="id_center_a" id="id_center_a" onchange="HandlerChange(this,'id_center_a');">
+            <label for="id_start_a">start:</label>
+            <input type="checkbox" name="id_start_a" id="id_start_a" onchange="HandlerChange(this,'id_start_a');">
+            <label for="id_end">end:</label>
+            <input type="checkbox" name="id_end_a" id="id_end_a" onchange="HandlerChange(this,'id_end_a');">
+
+        </div>
+        <div class="leyenda">
+            <label for="id_wrap">wrap:</label>
+            <input type="checkbox" name="id_wrap" id="id_wrap" onchange="HandlerChange(this,'id_wrap');">
+            <label for="id_nowrap">no wrap:</label>
+            <input type="checkbox" name="id_nowrap" id="id_nowrap" onchange="HandlerChange(this,'id_nowrap');"> 
+        </div>
+        <div class="leyenda">
+            <button type="button" style="margin-right: 0.5rem;" class="btn btn-success" onclick="AgregaCaja();">Agregar Cajita</button>
+        </div>
+        <div class="leyenda">
+            <button type="button" style="margin-right: 0.5rem;" class="btn btn-danger" onclick="QuitarCaja();">Quitar Cajita</button>
+        </div>
+    </div>
+
+
+
+</div>
+
+</section>
+
+
+<section id="mockup" style="flex-direction: column; align-items: center;" class="noShow">
+    <div>
+        <h1>Mockup</h1>
+        <hr>
+        <img src="./Styles/imgUno.png" class="imgUno" alt="">
+    </div>
+    
+  
+    </section>
+
+    <section id="about" class="noShow">
+        <div>
+            <h1>Acerca de ...</h1>
+            <hr>
+            <ul>
+            
+                <li>Skype:
+                    <a href="https://join.skype.com/invite/y8cWMWqCRPQe">Ricardo Rodríguez</a>
+                </li>
+                <li>telefono: 3213082108</li>
+                <li>Email: rarodrigezcarv@unadvirtual.edu.co</li>
+                <li>Github:
+                    <a href="https://github.com/ricardorod1147">ricardorod1147</a>
+                </li>
+               </ul>
+        </div>
+        
+        </section>
+
+
+<footer>
+<div class="celdafooter">
+
+    <p style="margin-bottom: 1rem;">Esta sitio web esta desarrolado por : Ricardo Rodríguez </p>
+
+       <ul>
+            
+        <li>Skype:
+            <a href="https://join.skype.com/invite/y8cWMWqCRPQe">Ricardo Rodríguez</a>
+        </li>
+        <li>telefono: 3213082108</li>
+        <li>Email: rarodrigezcarv@unadvirtual.edu.co</li>
+       </ul>
+        
+</div>
+
+<div class="celdafooter">
+
+    <p style="margin-bottom: 1rem;">Información de proyeto: </p>
+
+       <ul>
+            
+        <li>Github:
+            <a href="https://github.com/ricardorod1147">ricardorod1147</a>
+        </li>
+        <li>Repositorio: 
+            <a href="https://github.com/ricardorod1147">ricardorod1147</a>
+        </li>
+       
+       </ul>
+        
+</div>
+   
+
+</footer>
+   
+
+
+</body>
+</html>

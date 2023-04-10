@@ -87,5 +87,59 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+}
 
+
+/* Index Fase Tres */
+
+.content{
+display: grid;
+grid-template-areas: 
+            'A A A A'
+            'B B B B'
+            'C C D D'
+            'E E E E';
+}
+
+
+.headerFaseTres{
+    grid-area: A;
+    width: 100%;
+    background-color: rgb(15, 98, 146);
+    color: white;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+
+.navFaseTres{
+    grid-area: B;
+    display: flex; 
+    justify-content:center; 
+    width: 50%; 
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main{
+    grid-area: C;
+}
+
+asideFaseTres{
+    grid-area: D;
+}
+
+.footerFaseTres{
+    grid-area: D;
+    background-color:rgb(238, 238, 238);
+    display: flex;
+    height: 10rem;
+    align-items: center;
+    justify-content:space-evenly;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
