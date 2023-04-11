@@ -135,7 +135,7 @@ asideFaseTres{
     grid-area: D;
     background-color:rgb(238, 238, 238);
     display: flex;
-    height: 10rem;
+    height: 15rem;
     align-items: center;
     justify-content:space-evenly;
     position: fixed;

@@ -68,8 +68,6 @@ const HandlerChange = (event, valor) =>{
         }
 
 
-
-
         if(valor=="id_center_a"){
             if(trueAction){
                 LimpiarChecksAling("id_center_a");

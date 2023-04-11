@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fase Tres</title>
-    <link href="Styles/style.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="js/app,js"></script>
+    <script src="../js/app,js"></script>
 </head>
 <body>
     <content class="content">
@@ -16,7 +16,7 @@
     
     <header class="headerFaseTres"><h1>Fase Tres: Diseñar.</h1></header>
     <nav class="navFaseTres">
-        <button type="button" style="margin-right: 0.5rem;" class="btn btn-dark" onclick="ChangeSection(this, 'inicio')">Inicio</button>
+        <button type="button" style="margin-right: 0.5rem;" class="btn btn-dark" src="./Vistas/Audios.html" ><a class="dropdown-item" href="../index.html">Inicio</a></button>
         
 <!-- Example single danger button -->
 <div class="btn-group" style="margin-right: 0.5rem;">
@@ -24,20 +24,43 @@
       Temas
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="./Vistas/TemaBoxModel.html">Box Model</a></li>
+      <li><a class="dropdown-item" href="#">Box Model</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="./Vistas/TemaFlexBox.html">Flex Box</a></li>
+      <li><a class="dropdown-item" href="./TemaFlexBox.html">Flex Box</a></li>
     </ul>
   </div>
 
-        <button type="button" style="margin-right: 0.5rem;" class="btn btn-dark" src="./Vistas/Audios.html" ><a class="dropdown-item" href="./Vistas/Audios.html">Audios</a></button>
-        <button type="button" style="margin-right: 0.5rem;" class="btn btn-dark" src="./Vistas/Audios.html" ><a class="dropdown-item" href="./Vistas/Equipo.html">Equipo</a></button>
+  <button type="button" style="margin-right: 0.5rem;" class="btn btn-dark" src="./Vistas/Audios.html" ><a class="dropdown-item" href="./Vistas/Audios.html">Audios</a></button>
+  <button type="button" style="margin-right: 0.5rem;" class="btn btn-dark" src="./Equipo.html">Equipo</a></button>
     </nav>
-    <main class="shadow p-3 mb-5 bg-body-tertiary rounded">
+    <main style="height: 70rem;"  class="shadow p-3 mb-5 bg-body-tertiary rounded">
         <h1 class="text-center">Contenido de la Página</h1>
-        <p>
-            El trabajo desarrollado en la Fase 3, correspondiente a la asignatura de Diseño Web, se aplican los conocimientos para ofrecer como propuesta de producto a la empresa Web Design, codificando una página con un layout con base en herramientas de CSS, específicamente en Grid, adicionalmente se establece el uso del framework bootstrap, con el fin de dar solución a la necesidad de la empresa cliente, asignada para el ejercicio de la fase número dos, se desarrolla dadas las especificaciones: debe tener una barra de navegación horizontal, encabezado, un aside que contenga una barra de menú lateral  con las opciones de inicio, unas secciones descritas con el contenido correspondiente a cada etiqueta, adicionalmente se sube el proyecto a la plataforma GitHub por medio de la herramienta git y finalmente se realiza el despliegue en la plataforma netlify para visualizar el proyecto al cliente.
-        </p>
+           <!-- ESTA ES LA SECCION DE INICIO  -->
+           <h3>QUE ES BOX MODEL </h3>
+           <P> El nombre 'box-model' (modelo de caja) se llama así porque, en los navegadores, todo se construye a partir de cajas.
+   
+               Entonces, lo primero que debemos de entender, es que cada elemento que definimos en un documento HTML se mostrará en el navegador como una caja rectangular esta es la forma en que se representan todos los elementos, no existen elementos triangulares, redondos, poligonales etc. Todos los elementos en HTML por defecto son rectangulares ya que internamente el navegador dibuja un rectángulo.</P>
+           <img src="../img/img1.png" alt="img1">
+           <hr>
+       </section>
+       <a name="Box model"></a>
+       <section>
+           <!-- ESTA ES LA SECCION DE BOX MODEL -->
+   <h3>BOX MODEL</h3>
+   <P>Aunque usted visualice en un sitio web algún elemento diseñado en CSS que utiliza border-radius para parecer un círculo, ese elemento seguirá siendo rectangular y esto es porque como he dicho anteriormente cada elemento del diseño web es una caja, el navegador renderiza cada elemento de la página web como un elemento rectangular y con CSS nosotros definimos las propiedades como el tamaño, el color, los estilos, el margen y mucho más de estos elementos rectangulares.
+   
+       Esto puedes comprobarlo con el siguiente ejemplo, con ayuda de la propiedad outline, podemos ver todos los elementos de la pagina de inicio de Google de forma rectangular y esto lo puedes hacer con cualquier otro sitio web.
+   </P>
+   <img src="../img/img1.png" alt="">
+   
+   <p>
+       El navegador Microsoft Edge tiene una herramienta llamada 3D view que además de encontrar áreas de anidamiento profundo del DOM y ayudar a la depuración de z-index también muestra todas las cajas contenedoras de forma visual en 3D. Es uno de los mejores ejemplos visuales para poder comprender el box model:
+   </p>
+   <img src="../img/img2.png" alt="">
+   <p>Como ya lo mencione anteriormente cada elemento HTML en una página web es una caja, pero hay dos tipos básicos de cajas:
+   
+       Block boxes.
+       Inline boxes.</p>
     </main>
         <asideFaseTres class="shadow p-3 mb-5 bg-body-tertiary rounded ">
             <P>Menú</P>
@@ -53,9 +76,9 @@
                       <strong>Aqui encontrará los temas contenidos:</strong>  
                     <ul>
                         <li>
-                        <a href="./Vistas/TemaBoxModel.html">Box Model</a></li>
+                        <a href="./TemaBoxModel.html">Box Model</a></li>
                         <li>
-                        <a href="./Vistas/TemaFlexBox.html">Flex Box</a></li>
+                        <a href="./TemaFlexBox.html">Flex Box</a></li>
                     </ul>
                     </div>
                   </div>
@@ -71,7 +94,7 @@
                       <strong>Audios disponibles:</strong>
                       <ul>
                         <li>
-                        <a href="./Vistas/Audios.html">Clic aqui</a></li>
+                        <a href="https://join.skype.com/invite/y8cWMWqCRPQe">Clic aqui</a></li>
                     </ul>
                     </div>
                   </div>
@@ -87,7 +110,7 @@
                       <strong>Equipo.</strong> 
                        <ul>
                         <li>
-                        <a href="./Vistas/Equipo.html">Clic aqui</a></li>
+                        <a href="https://join.skype.com/invite/y8cWMWqCRPQe">Clic aqui</a></li>
                     </ul>
                     </div>
                   </div>
@@ -99,9 +122,9 @@
     <footerFaseTres class="footerFaseTres">
         <div class="celdafooter">
         
-            <p style="margin-bottom: 1rem;">Esta sitio web esta desarrolado por : Johan Fuquene  Ricardo Rodríguez </p>
+            <p style="margin-bottom: 1rem;">Esta sitio web esta desarrolado por : Johan Fuquene y Ricardo Rodríguez </p>
         
-            <ul>
+               <ul>
                     
                 <li>Skype:
                     <a href="#">Johan Fuquene</a>
