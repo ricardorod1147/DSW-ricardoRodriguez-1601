@@ -34,33 +34,32 @@
         <button type="button" style="margin-right: 0.5rem;" class="btn btn-dark" src="">Equipo</button>
     </nav>
     <main style="height: 70rem;"  class="shadow p-3 mb-5 bg-body-tertiary rounded">
-        <h1 class="text-center">Contenido de la Página</h1>
+        <h1 class="text-center">Flexbox</h1>
            <!-- ESTA ES LA SECCION DE INICIO  -->
-           <h3>QUE ES BOX MODEL </h3>
-           <P> El nombre 'box-model' (modelo de caja) se llama así porque, en los navegadores, todo se construye a partir de cajas.
-   
+           <P> El módulo de caja flexible, es una herramienta para establecer un layout o maquetado por medio de un método para distribuir el espacio entre ítems y de interfaz con la cual se puede establecer métodos para diseñar de manera responsiva.
                Entonces, lo primero que debemos de entender, es que cada elemento que definimos en un documento HTML se mostrará en el navegador como una caja rectangular esta es la forma en que se representan todos los elementos, no existen elementos triangulares, redondos, poligonales etc. Todos los elementos en HTML por defecto son rectangulares ya que internamente el navegador dibuja un rectángulo.</P>
-           <img src="../img/img1.png" alt="img1">
            <hr>
        </section>
        <a name="Box model"></a>
        <section>
            <!-- ESTA ES LA SECCION DE BOX MODEL -->
-   <h3>BOX MODEL</h3>
-   <P>Aunque usted visualice en un sitio web algún elemento diseñado en CSS que utiliza border-radius para parecer un círculo, ese elemento seguirá siendo rectangular y esto es porque como he dicho anteriormente cada elemento del diseño web es una caja, el navegador renderiza cada elemento de la página web como un elemento rectangular y con CSS nosotros definimos las propiedades como el tamaño, el color, los estilos, el margen y mucho más de estos elementos rectangulares.
-   
-       Esto puedes comprobarlo con el siguiente ejemplo, con ayuda de la propiedad outline, podemos ver todos los elementos de la pagina de inicio de Google de forma rectangular y esto lo puedes hacer con cualquier otro sitio web.
+   <h3>Diferencia con Grid</h3>
+   <P> 
+    La diferencia que tiene con la herramienta Grid es que Flex se usa solamente de manera unidimensional por el contrario Grid maneja columnas y filas a la vez, como lo manifiesta (mdn web docs, 2022) “Cuando describimos a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una sola dimensión a la vez — ya sea como fila o como columna. Esto contrasta con el modelo bidimensional del Grid Layout de CSS, el cual controla columnas y filas a la vez.”
    </P>
-   <img src="../img/img1.png" alt="">
-   
+     
    <p>
-       El navegador Microsoft Edge tiene una herramienta llamada 3D view que además de encontrar áreas de anidamiento profundo del DOM y ayudar a la depuración de z-index también muestra todas las cajas contenedoras de forma visual en 3D. Es uno de los mejores ejemplos visuales para poder comprender el box model:
+    Podemos establecer la via unidimensional manipulada por dos ejes el principal y el cruzado, usando la herramienta flex diection, como lo dice (mdn web docs, 2022) “ Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principal y el eje cruzado. El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este. Todo lo que hacemos con flexbox está referido a estos dos ejes, por lo que vale la pena entender cómo trabajan desde el principio.” 
    </p>
-   <img src="../img/img2.png" alt="">
-   <p>Como ya lo mencione anteriormente cada elemento HTML en una página web es una caja, pero hay dos tipos básicos de cajas:
-   
-       Block boxes.
-       Inline boxes.</p>
+   <img src="../img/imgFlexUno.PNG" alt="">
+   <img src="../img/imgFlexUno.PNG" alt="">
+   <img src="../img/imgFlexUno.PNG" alt="">
+
+
+   <h3>Contenedor Flex</h3>
+   <p>
+    Un área del documento que contiene un flexbox es llamada contendedor flex. Para crear un contenedor flex, establecemos la propiedad del área del contenedor display como flex o inline-flex. Tan pronto como hacemos esto, los hijos directos de este contenedor se vuelven ítems flex. Como con todas las propiedades de CSS, se definen algunos valores iniciales, así que cuando creemos un contenedor flex todos los ítems flex contenidos se comportarán de la siguiente manera.(mdn web docs, 2022) 
+   </p>
     </main>
         <asideFaseTres class="shadow p-3 mb-5 bg-body-tertiary rounded ">
             <P>Menú</P>
