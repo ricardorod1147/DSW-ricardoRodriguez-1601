@@ -143,3 +143,15 @@ asideFaseTres{
     bottom: 0;
     width: 100%;
 }
+
+.footerFaseCuatro{
+    background-color:rgb(238, 238, 238);
+    display: flex;
+    height: 15rem;
+    align-items: center;
+    justify-content:space-evenly;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

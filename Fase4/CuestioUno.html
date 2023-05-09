@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase Cuatro</title>
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../js/app,js"></script>
+</head>
+<body>
+  <header class="headerFaseTres" style="display: flex; flex-wrap: wrap;">
+      
+      
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%;">
+      <div class="container-fluid" style="background-color: rgba(15, 98, 146, 0.1);">
+        <a class="navbar-brand" href="#">Fase 4</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Vistas/Audios.html">Audios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Vistas/Equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Temas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../Vistas/TemaBoxModel.html">Box Model</a></li>
+                <li><a class="dropdown-item" href="../Vistas/TemaFlexBox.html">Flex Box </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cuestionarios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./CuestioUno.html">Ricardo Rodríguez</a></li>
+                <li><a class="dropdown-item" href="#">Johan Fuquene</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <h1>Fase Cuatro: Implementar.</h1></header>
+
+
+
+    <content style="display: flex; flex-direction: column; height: 60rem;">
+    <section style="overflow: hidden; margin: 0px;">
+        <h1 class="text-center">Responda las siguientes preguntas</h1>
+        <div style="display: flex;width: 100%;">
+          <h4>Resultado :</h4>
+          <h4 style="margin-bottom: 2rem; margin-left: 1rem;" id="rest"></h4>
+        </div>
+    </section>
+        <asideFaseCuatro class="" style="width: 100%; margin: 0px;">
+          <form name="form" style="margin-bottom:3rem; margin-left: 3rem;">
+                <h5>1. ¿A qué propiedad se hace referencia para usar Flex Box en CSS?</h5>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r1" value="a"> a. display: flex; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r1" value="b"> b. flex: true; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r1" value="c"> c. flexbox: wrap; <br>
+                <h5>2. ¿Con que propiedad de Flex box podemos usar los items flex en forma de columna?</h5>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r2" value="a"> a. display: column; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r2" value="b"> b. flex-direction: column; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r2" value="c"> a. display:flex-column; <br>
+                <h5>3. ¿Qué funcionalidad tiene la propiedad flex-wrap?</h5>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r3" value="a"> a. Usar propiedades flex <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r3" value="b"> b. hacer que los items flex sean flexibles <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r3" value="c"> c. Hacer que los flex sean repartidos en varias lineas <br>
+                <h5>4. ¿Con que propiedad de Flex box podemos alinear los items flex a la izquierda de forma horizontal?</h5>
+                <input class="form-check-input" style="margin-left: 3rem;"type="radio" name="r4" value="a"> a. justify-content: left; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r4" value="b"> b. justify-content:flex-start; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r4" value="c"> c. aling-item: start; <br>
+                <h5>5. ¿Con que propiedad de Flex box podemos centrar los items flex en el eje cruzado ?</h5>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r5" value="a"> a. aling-items: center; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r5" value="b"> b. justify: center; <br>
+                <input class="form-check-input" style="margin-left: 3rem;" type="radio" name="r5" value="c"> c. aling: center; <br>
+                <div style="display: flex; justify-content: center;">
+                  <input type="button" class="btn btn-success" value="Enviar" onclick="resultadoPreguntas();">
+                </div>
+          </form>
+        </asideFaseCuatro>
+      </content>
+
+    <footerFaseCuatro class="footerFaseCuatro" style="display: flex; justify-content: space-evenly; background-color:rgb(238, 238, 238);">
+        <div class="celdafooter">
+        
+            <p style="margin-bottom: 1rem;">Esta sitio web esta desarrolado por : Johan Fuquene  Ricardo Rodríguez </p>
+        
+            <ul>
+                    
+                <li>Skype:
+                    <a href="#">Johan Fuquene</a>
+                </li>
+                <li>telefono: 3118859022</li>
+                <li>Email: johanfuquene25@gmail.com</li>
+                <li>Github:
+                    <a href="https://github.com/Johanfuquene25">Johanfuquene25</a>
+                </li>
+                <li>Repositorio: 
+                    <a href="https://github.com/Johanfuquene25/DSW_JOHANFUQUENE_301122_12">Johanfuquene25</a>
+                </li>
+               </ul>
+                
+        </div>
+ 
+        <div class="celdafooter">
+        
+            <p style="margin-bottom: 1rem;">Información de proyeto: </p>
+        
+            <ul>
+                    
+                <li>Skype:
+                    <a href="https://join.skype.com/invite/y8cWMWqCRPQe">Ricardo Rodríguez</a>
+                </li>
+                <li>telefono: 3213082108</li>
+                <li>Email: rarodrigezcarv@unadvirtual.edu.co</li>
+                <li>Github:
+                    <a href="https://github.com/ricardorod1147">ricardorod1147</a>
+                </li>
+                <li>Repositorio: 
+                    <a href="https://github.com/ricardorod1147">ricardorod1147</a>
+                </li>
+               </ul>
+                
+        </div>
+        
+    </footerFaseCuatro>
+
+</body>
+</html>

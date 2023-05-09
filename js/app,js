@@ -234,3 +234,49 @@ if(valor=="about"){
 
 }
 
+
+
+const resultadoPreguntas =()=>{
+let puntos = 0;
+let Data = document.forms["form"];
+let respuestas = ["a","b","c", "b","a"];
+
+
+for (let index = 1; index <= respuestas.length; index++) {
+    // console.dir(Data["r"+index].value +" "+ respuestas.length);
+    if(Data["r"+index].value == null || Data["r"+index].value == ""){
+                alert("Por favor responder todas las preguntas");
+                return false;
+            }else{
+                // console.log(Data["r"+index].value+" "+respuestas[index-1]+""+puntos);
+                    if(Data["r" + index].value == respuestas[index-1]){
+                        puntos++;
+                    }
+                }
+            }
+            let resMensaje = document.getElementById('rest');
+            if(puntos==respuestas.length){
+                resMensaje.innerHTML= "¡Puntaje perfecto! "+puntos+ " de "+puntos+" posibles. ";
+            }else {
+                resMensaje.innerHTML= "Acertaste "+puntos+ " de "+respuestas.length+ " posibles. ";
+            }
+
+}
+
+// for(let i =1; i<=respuestas.length; i++){
+//     if(Data["r"+i].value==null||Data["r"+i].value==""){
+//         alert("Por favor responder todas las preguntas");
+//         return false;
+//     }else if(Data["r"+i].value==respuestas[i-1]){
+        
+//         // console.log("valor de respuestas...."+respuestas[i-1]);
+//         puntos++;
+//     }
+
+    
+    
+// }
+
+// console.log("puntos:" +puntos);
+// console.log("longitud:" +respuestas.length);
+
